@@ -85,7 +85,7 @@ angular.module('smkApp')
     };
 
     // If there's a search term defined in the query parameter, perform a
-    // search away.
+    // search right away.
     if ($scope.term) {
       $scope.changePage();
     }
