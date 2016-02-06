@@ -29,7 +29,9 @@
   <div class="list-group-item" ng-repeat="result in results">
     <div class="media">
       <div class="pull-left">
-        <img class="media-object" width="100px" ng-src="{{ result.medium_image_url }}">
+        <a ng-href="{{ result.medium_image_url }}" target="_blank">
+          <img class="media-object" width="100px" ng-src="{{ result.medium_image_url }}">
+        </a>
       </div>
       <div class="media-body">
         <h4 class="list-group-item-heading media-heading">{{ result.title_first }}</h4>
