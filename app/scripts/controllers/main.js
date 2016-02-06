@@ -25,9 +25,6 @@ angular.module('smkApp')
     // Search results
     $scope.results = [];
 
-    // Advanced search options toggling
-    $scope.toggleAdvanced = false;
-
     /**
      * Perform a search against the SMK Solr API.
      *

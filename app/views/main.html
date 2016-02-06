@@ -3,12 +3,9 @@
     <input type="text" class="form-control" placeholder="Fire away!" ng-model="term">
 
     <span class="input-group-btn">
-      <!-- <button class="btn btn-default" type="button" ng-click="toggleAdvanced = !toggleAdvanced" ng-class="{active: toggleAdvanced}">Advanced</button> -->
       <button class="btn btn-default" type="submit">Search</button>
     </span>
   </div>
-
-  <!-- <div collapse="!toggleAdvanced"></div> -->
 </form>
 
 <pagination
@@ -45,7 +42,7 @@
 
           <p ng-if="result.artist_name.length">
             <b>Artist(s):</b>
-            <span ng-repeat="artist in result.artist_name">
+            <span ng-repeat="artist in result.artist_name track by $index">
               <br>{{ artist }}
             </span>
           </p>
